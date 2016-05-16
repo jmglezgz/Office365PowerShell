@@ -16,6 +16,7 @@ $cred = Get-Credential
 $SPOServiceURL = "https://"+ $DomainNameHost + "-admin.sharepoint.com"
 
 # 2.Run these commands to connect to Office 365.
+# Install Modules & Requirements: https://msdn.microsoft.com/es-es/library/jj151815.aspx#bkmk_installmodule
 Import-Module MsOnline
 
 Connect-MsolService -Credential $cred
